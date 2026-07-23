@@ -14,6 +14,7 @@ function characterReplacement(s: string, k: number): number {
             count.set(leftChar, count.get(leftChar)! - 1);
             left++;
         }
+        
 
         result = Math.max(result, right - left + 1);
     }
