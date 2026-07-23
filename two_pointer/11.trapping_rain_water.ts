@@ -11,9 +11,6 @@ function trap(height: number[]): number {
     let rainWater = 0;
 
     while (l <= r) {
-        console.log({
-            l, r, maxLeft, maxRight, rainWater
-        })
         if (height[l] <= height[r]) {
             rainWater = rainWater + Math.max(0, maxLeft - height[l]);
             maxLeft = Math.max(maxLeft, height[l]);
@@ -23,7 +20,6 @@ function trap(height: number[]): number {
             maxRight = Math.max(maxRight, height[r]);
             r--;
         }
-
     }
     return rainWater
 };
