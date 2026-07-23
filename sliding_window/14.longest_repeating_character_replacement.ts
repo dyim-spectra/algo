@@ -16,6 +16,7 @@ function characterReplacement(s: string, k: number): number {
         }
         
 
+
         result = Math.max(result, right - left + 1);
     }
     return result;
